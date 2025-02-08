@@ -433,6 +433,7 @@ def get_modules():
         ]
 
     plist = []
+    print("----------Fatih odoo.addons.__path__ => ------------", odoo.addons.__path__)
     for ad in odoo.addons.__path__:
         if not os.path.exists(ad):
             _logger.warning("addons path does not exist: %s", ad)

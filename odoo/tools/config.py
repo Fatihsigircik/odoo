@@ -241,18 +241,18 @@ class configmanager(object):
         parser.add_option_group(group)
 
         group = optparse.OptionGroup(parser, "Database related options")
-        group.add_option("-d", "--database", dest="db_name", my_default=False,
+        group.add_option("-d", "--database", dest="db_name", my_default="odoo_db",
                          help="specify the database name")
-        group.add_option("-r", "--db_user", dest="db_user", my_default=False,
+        group.add_option("-r", "--db_user", dest="db_user", my_default="odoo",
                          help="specify the database user name")
-        group.add_option("-w", "--db_password", dest="db_password", my_default=False,
+        group.add_option("-w", "--db_password", dest="db_password", my_default="123456",
                          help="specify the database password")
         group.add_option("--pg_path", dest="pg_path", help="specify the pg executable path")
-        group.add_option("--db_host", dest="db_host", my_default=False,
+        group.add_option("--db_host", dest="db_host", my_default="localhost",
                          help="specify the database host")
         group.add_option("--db_replica_host", dest="db_replica_host", my_default=False,
                          help="specify the replica host. Specify an empty db_replica_host to use the default unix socket.")
-        group.add_option("--db_port", dest="db_port", my_default=False,
+        group.add_option("--db_port", dest="db_port", my_default=5432,
                          help="specify the database port", type="int")
         group.add_option("--db_replica_port", dest="db_replica_port", my_default=False,
                          help="specify the replica port", type="int")

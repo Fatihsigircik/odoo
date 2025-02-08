@@ -1,7 +1,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'eCommerce',
+    'name': 'eCommerce--',
     'category': 'Website/Website',
     'sequence': 50,
     'summary': 'Sell your products online',
